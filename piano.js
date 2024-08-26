@@ -114,16 +114,24 @@ function DotPlace(ans){
 //Handles Checks for correct and incorrect radio button presses
 function SubButt()
 {
-	var compar = document.getElementsByName('musKey');
-	var i;
+	let compar = document.getElementsByName('musKey');
+	let i;
+    let correctAmountRef = document.getElementById('rightVar');
+    let incorrectAmountRef = document.getElementById('wrongVar');
+    let correctAmount = Number(correctAmountRef.innerHTML);
+    let incorrectAmount = Number(incorrectAmountRef.innerHTML);
+    console.log(correctAmount, incorrectAmount);
+
 	for (i = 0; i < compar.length; i++)
 	{
 		if (compar[i].checked && compar[i].value == ans){
 			alert("Correct");
+            correctAmountRef.innerHTML = ++correctAmount;
 			scr();
 		}
 		else if (compar[i].checked && compar[i].value != ans)
 		{
+            incorrectAmountRef.innerHTML = ++incorrectAmount;
 			alert("Incorrect, please try again");
 		}
 	}

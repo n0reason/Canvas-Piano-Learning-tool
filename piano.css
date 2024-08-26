@@ -1,0 +1,15 @@
+h2 {
+    text-align: center;
+}
+
+#wrong {
+    color: rgb(135, 5, 5);
+}
+
+#right {
+    color: rgb(8, 236, 8);
+}
+
+var {
+    font-style: normal;
+}
