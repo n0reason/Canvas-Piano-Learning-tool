@@ -120,7 +120,6 @@ function SubButt()
     let incorrectAmountRef = document.getElementById('wrongVar');
     let correctAmount = Number(correctAmountRef.innerHTML);
     let incorrectAmount = Number(incorrectAmountRef.innerHTML);
-    console.log(correctAmount, incorrectAmount);
 
 	for (i = 0; i < compar.length; i++)
 	{
